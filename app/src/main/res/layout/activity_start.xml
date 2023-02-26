@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e7e8f5"
+    android:orientation="vertical"
+    tools:context=".activities.StartActivity">
+
+
+    <TextView
+        android:id="@+id/tvTap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Tap mic to start or stop"
+        android:textSize="20sp" />
+
+        <com.skyfishjy.library.RippleBackground
+            android:id="@+id/ripple"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:rb_color="#586ebb"
+            app:rb_duration="2000"
+            app:rb_radius="20dp"
+            app:rb_rippleAmount="4"
+            app:rb_scale="6">
+
+            <ImageView
+                android:id="@+id/btSpeech"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/baseline_mic_none_24" />
+        </com.skyfishjy.library.RippleBackground>
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:maxLines="5"
+        android:padding="20dp"
+        android:text="Say City Name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        tools:ignore="Deprecated" />
+    <ImageButton
+        android:id="@+id/bDone"
+        android:layout_width="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_done_24"
+        android:visibility="gone"
+        android:background="@drawable/circle"
+        android:layout_height="80dp"/>
+</LinearLayout>

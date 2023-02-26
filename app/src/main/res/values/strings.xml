@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="say_something">Say Something</string>
+    <string name="tag_again">Tap again to record!</string>
+</resources>
